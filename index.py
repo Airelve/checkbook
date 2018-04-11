@@ -117,7 +117,7 @@ def index():
     #3.从数据库中查询作者信息
     authors = Author.query.all()
 
-    return render_template("file06libaray.html",bookForm=bookForm,authors=authors)
+    return render_template("book.html",bookForm=bookForm,authors=authors)
 
 
 @app.route('/delete_book/<int:id>')
